@@ -1,1 +1,21 @@
-console.log("我的网站运行成功了！");
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  {
+    threshold: 0.15,
+  }
+);
+
+reveals.forEach((item) => observer.observe(item));
+.work-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

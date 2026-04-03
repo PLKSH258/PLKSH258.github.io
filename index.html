@@ -3,80 +3,199 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>黄小鹏 | 个人网站</title>
-  <meta name="description" content="黄小鹏的个人网站，展示个人介绍、技能、项目和联系方式。" />
+  <title>黄小鹏 | Personal Website</title>
+  <meta
+    name="description"
+    content="一个带有艺术感与未来感的个人网站，用来展示个人介绍、作品和联系方式。"
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <nav class="nav">
-      <div class="logo">黄小鹏</div>
-      <div class="nav-links">
-        <a href="#about">关于我</a>
-        <a href="#skills">技能</a>
-        <a href="#projects">项目</a>
-        <a href="#contact">联系</a>
-      </div>
-    </nav>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
 
-    <div class="hero-content">
-      <h1>你好，我是黄小鹏</h1>
-      <p>一名正在成长中的创作者 / 角色概念设计师 / 游戏开发者</p>
-      <a class="btn" href="#projects">查看我的作品</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="logo">YOUR NAME</a>
+      <nav class="nav-links">
+        <a href="#about">关于</a>
+        <a href="#works">作品</a>
+        <a href="#philosophy">理念</a>
+        <a href="#contact">联系</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section id="about" class="card">
-      <h2>关于我</h2>
-      <p>
-        我是一名热爱互联网与创作的人，目前正在学习建站、设计与内容表达。
-        这个网站是我的个人主页，用来展示我的经历、作品和联系方式。
+  <main>
+    <section class="hero container reveal">
+      <p class="hero-kicker">DIGITAL IDENTITY / VISUAL PORTFOLIO</p>
+      <h1>
+        我用设计、内容与代码，<br />
+        构建有情绪的数字空间。
+      </h1>
+      <p class="hero-desc">
+        你好，我是你的名字。这里是我的个人网站，用来展示我的作品、审美表达与正在发生的创作。
       </p>
-    </section>
 
-    <section id="skills" class="card">
-      <h2>我的技能</h2>
-      <div class="tag-list">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>UI 设计</span>
-        <span>内容创作</span>
+      <div class="hero-actions">
+        <a href="#works" class="btn btn-primary">查看作品</a>
+        <a href="#contact" class="btn btn-secondary">联系我</a>
+      </div>
+
+      <div class="hero-cards">
+        <div class="glass-card small-card">
+          <span class="card-label">FOCUS</span>
+          <h3>视觉表达</h3>
+          <p>将品牌气质、个人风格与界面体验融合在一起。</p>
+        </div>
+
+        <div class="glass-card small-card">
+          <span class="card-label">CURRENT</span>
+          <h3>个人网站实验</h3>
+          <p>探索更具艺术感的排版、动态和数字氛围。</p>
+        </div>
+
+        <div class="glass-card small-card">
+          <span class="card-label">AVAILABLE FOR</span>
+          <h3>合作 / 交流</h3>
+          <p>欢迎项目合作、创意沟通与跨领域连接。</p>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="card">
-      <h2>项目展示</h2>
+    <section id="about" class="section container reveal">
+      <div class="section-title-wrap">
+        <p class="section-index">01</p>
+        <h2 class="section-title">关于我</h2>
+      </div>
 
-      <div class="project-grid">
-        <article class="project-item">
-          <h3>项目一：个人网站</h3>
-          <p>这是我从零开始制作的第一个个人网站，用于展示我的信息和作品。</p>
+      <div class="glass-panel about-grid">
+        <div class="about-text">
+          <p>
+            我希望我的网站不是一张普通简历，而更像一个具有温度、节奏与视觉情绪的个人空间。
+          </p>
+          <p>
+            我正在持续学习设计、前端、品牌表达和数字内容创作，尝试把理性结构与艺术感结合起来，
+            让每一次展示都更有辨识度。
+          </p>
+        </div>
+
+        <div class="about-meta">
+          <div class="meta-item">
+            <span>身份</span>
+            <strong>创作者 / 设计探索者</strong>
+          </div>
+          <div class="meta-item">
+            <span>方向</span>
+            <strong>视觉设计 / 前端 / 内容表达</strong>
+          </div>
+          <div class="meta-item">
+            <span>风格关键词</span>
+            <strong>高级感 / 极简 / 未来 / 艺术</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section container reveal">
+      <div class="section-title-wrap">
+        <p class="section-index">02</p>
+        <h2 class="section-title">精选作品</h2>
+      </div>
+
+      <div class="works-grid">
+        <article class="work-card">
+<div class="work-image">
+  <img src="images/work1.jpg" alt="项目作品 1" />
+</div>
+          <div class="work-content">
+            <p class="work-tag">PROJECT 01</p>
+            <h3>个人主页视觉实验</h3>
+            <p>
+              以深色背景、光晕、玻璃拟态和大字号排版建立个人品牌的第一印象。
+            </p>
+          </div>
         </article>
 
-        <article class="project-item">
-          <h3>项目二：作品集页面</h3>
-          <p>用于展示我的设计稿、案例整理、创意方案等内容。</p>
+        <article class="work-card">
+<div class="work-image">
+  <img src="images/work2.jpg" alt="项目作品 2" />
+</div>
+          <div class="work-content">
+            <p class="work-tag">PROJECT 02</p>
+            <h3>作品集展示页面</h3>
+            <p>
+              用模块化布局整理项目案例，让内容更聚焦，画面更有呼吸感。
+            </p>
+          </div>
         </article>
 
-        <article class="project-item">
-          <h3>项目三：学习记录</h3>
-          <p>记录我学习前端、设计、AI 工具的过程和成果。</p>
+        <article class="work-card">
+<div class="work-image">
+  <img src="images/work3.jpg" alt="项目作品 3" />
+</div>
+          <div class="work-content">
+            <p class="work-tag">PROJECT 03</p>
+            <h3>数字艺术风概念页</h3>
+            <p>
+              尝试将艺术海报感、渐变色彩与网页交互融合，探索更有氛围的网站表达。
+            </p>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="card">
-      <h2>联系方式</h2>
-      <p>邮箱：1431210043@qq</p>
-      <p>微信：PPM19800118</p>
-      <p>小红书 / GitHub / B站：你的账号名</p>
+    <section id="philosophy" class="section container reveal">
+      <div class="section-title-wrap">
+        <p class="section-index">03</p>
+        <h2 class="section-title">创作理念</h2>
+      </div>
+
+      <div class="philosophy-grid">
+        <div class="glass-panel philosophy-card">
+          <h3>视觉不只是装饰</h3>
+          <p>
+            我相信画面应该传达气质、秩序和情绪，而不是简单堆砌元素。
+          </p>
+        </div>
+
+        <div class="glass-panel philosophy-card">
+          <h3>风格来自选择</h3>
+          <p>
+            真正的高级感来自克制、留白、比例、节奏与统一，而不是一味复杂。
+          </p>
+        </div>
+
+        <div class="glass-panel philosophy-card">
+          <h3>网站也是作品</h3>
+          <p>
+            对我来说，个人网站本身就是一件作品，它展示的不只是信息，还有你的审美。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container reveal">
+      <div class="contact-panel glass-panel">
+        <p class="contact-label">LET'S CONNECT</p>
+        <h2>如果你喜欢这种风格，欢迎联系我。</h2>
+        <p class="contact-text">
+          你可以把这里换成你的邮箱、微信、GitHub、B站、小红书或其他社交方式。
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:your@email.com">your@email.com</a>
+          <a href="#">GitHub</a>
+          <a href="#">小红书</a>
+          <a href="#">微信</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© 2026 黄小鹏. All Rights Reserved.</p>
+  <footer class="footer container">
+    <p>© 2026 YOUR NAME. ALL RIGHTS RESERVED.</p>
   </footer>
 
   <script src="script.js"></script>
